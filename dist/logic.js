@@ -1,0 +1,3 @@
+export function validBarcode(code){if(!/^\d{8}$|^\d{12,14}$/.test(code))return false;const body=code.slice(0,-1);let sum=0;for(let i=body.length-1,pos=0;i>=0;i--,pos++)sum+=Number(body[i])*(pos%2===0?3:1);return (10-sum%10)%10===Number(code.at(-1))}
+export function miles(a,b){const rad=n=>n*Math.PI/180;const dLat=rad(b.latitude-a.latitude),dLon=rad(b.longitude-a.longitude);const h=Math.sin(dLat/2)**2+Math.cos(rad(a.latitude))*Math.cos(rad(b.latitude))*Math.sin(dLon/2)**2;return 3958.8*2*Math.atan2(Math.sqrt(h),Math.sqrt(1-h))}
+export function cleanBasket(value,ids){if(!value||typeof value!=='object'||Array.isArray(value))return {};return Object.fromEntries(Object.entries(value).filter(([id,n])=>ids.includes(id)&&Number.isInteger(n)&&n>0&&n<=99))}
