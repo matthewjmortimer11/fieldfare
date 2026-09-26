@@ -1,0 +1,18 @@
+{
+  "retailer": "Example Supermarket",
+  "retrievedAt": "2026-09-23T12:00:00Z",
+  "source": "https://supplier.example.invalid/fieldfare-feed",
+  "records": [
+    {
+      "retailerProductId": "12345",
+      "name": "Example organic chicken breast fillets",
+      "url": "https://www.example.invalid/products/12345",
+      "department": "Chicken",
+      "cut": "breast",
+      "packSize": "300g",
+      "identityStatus": "exact_variant",
+      "availabilityStatus": "listed",
+      "reviewStatus": "needs_evidence"
+    }
+  ]
+}

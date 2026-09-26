@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "code": "5012345678900",
+      "product_name": "Example British chicken breast fillets",
+      "brands": "Tesco",
+      "quantity": "300g",
+      "stores": "Tesco",
+      "categories": "Fresh foods, Meats, Poultry, Chicken",
+      "labels": "British",
+      "origins": "United Kingdom"
+    },
+    {
+      "code": "5012345678901",
+      "product_name": "Example vegetables",
+      "brands": "Tesco",
+      "stores": "Tesco",
+      "categories": "Vegetables"
+    }
+  ]
+}

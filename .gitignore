@@ -2,3 +2,9 @@
 .sites-runtime/
 node_modules/
 *.tar.gz
+.vercel
+.env*
+research/*.sqlite
+research/*.sqlite-*
+work/*
+!work/example-import.json

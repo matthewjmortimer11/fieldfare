@@ -1,0 +1,15 @@
+/* Release 1.7.1: mobile in-store legibility and predictable card actions. */
+.card-bottom{flex-wrap:wrap}
+.card-bottom [data-action="check-pack"]{order:3;width:100%;padding-top:6px}
+.card-bottom [data-action="product"]{margin-right:auto}
+
+@media (max-width:480px){
+  .retailer-tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .retailer-tile{min-height:118px}
+  .retailer-tile span{font-size:14px}
+  .retailer-tile small{font-size:11px}
+  .dialog-actions .btn{flex:1}
+  .dialog-actions .btn.primary{flex:2}
+  .check-row{gap:10px}
+  .check-row span{max-width:60%}
+}

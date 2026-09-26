@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "retailer": "Example Supermarket",
+  "retrievedAt": "2026-09-23T12:00:00Z",
+  "source": "https://supplier.example.invalid/fieldfare-feed",
+  "recordCount": 1,
+  "coverage": {
+    "Beef": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    },
+    "Lamb": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    },
+    "Pork": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    },
+    "Chicken": {
+      "discovered": 1,
+      "reviewed": 0,
+      "needsEvidence": 1
+    },
+    "Turkey": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    },
+    "Duck": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    },
+    "Game": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    },
+    "Other meat": {
+      "discovered": 0,
+      "reviewed": 0,
+      "needsEvidence": 0
+    }
+  },
+  "records": [
+    {
+      "fieldfareVariantId": "example-supermarket-12345",
+      "retailer": "Example Supermarket",
+      "retailerProductId": "12345",
+      "name": "Example organic chicken breast fillets",
+      "brand": null,
+      "gtin": null,
+      "packSize": "300g",
+      "department": "Chicken",
+      "cut": "breast",
+      "availabilityStatus": "listed",
+      "identityStatus": "exact_variant",
+      "reviewStatus": "needs_evidence",
+      "url": "https://www.example.invalid/products/12345",
+      "capturedAt": "2026-09-23T12:00:00Z",
+      "source": "https://supplier.example.invalid/fieldfare-feed",
+      "welfareEvidence": null
+    }
+  ],
+  "contentHash": "24f22f0466fc30da711640b719b43446623c963e88265886641ba5609e61513b"
+}

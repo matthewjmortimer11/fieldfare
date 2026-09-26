@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "standardVersion": "outdoor-access-v1",
+  "generatedFor": "Fieldfare research ledger",
+  "reviewedOn": "2026-09-23",
+  "sources": [
+    {
+      "id": "tesco-organic-whole-product-page",
+      "publisher": "Tesco",
+      "title": "Tesco Organic Whole Chicken",
+      "url": "https://www.tesco.com/shop/en-GB/products/250527991",
+      "sourceType": "product_page",
+      "retrievedOn": "2026-09-23"
+    },
+    {
+      "id": "tesco-room-to-roam-product-page",
+      "publisher": "Tesco",
+      "title": "Tesco Room To Roam British Chicken Breast Fillets",
+      "url": "https://www.tesco.com/groceries/en-GB/products/308479935",
+      "sourceType": "product_page",
+      "retrievedOn": "2026-09-22"
+    },
+    {
+      "id": "uk-organic-control-bodies",
+      "publisher": "UK Government",
+      "title": "UK approved organic control bodies",
+      "url": "https://www.gov.uk/guidance/organic-food-uk-approved-control-bodies",
+      "sourceType": "certifier",
+      "retrievedOn": "2026-09-23"
+    }
+  ],
+  "products": [
+    {
+      "id": "tesco-organic-whole",
+      "retailer": "Tesco",
+      "name": "Tesco Organic Whole Chicken",
+      "species": "Chicken",
+      "identityStatus": "exact_variant",
+      "decision": "confirmed_match",
+      "claims": [
+        {"type": "organic", "wording": "Organic chicken"},
+        {"type": "control_code", "wording": "GB-ORG-04", "value": "GB-ORG-04"},
+        {"type": "outdoor_access", "wording": "freedom to forage or roam"}
+      ],
+      "sourceIds": ["tesco-organic-whole-product-page", "uk-organic-control-bodies"],
+      "limitations": "The review does not identify a farm, batch, local stock, or an independently retrieved operator certificate."
+    },
+    {
+      "id": "tesco-room-to-roam-chicken-breast-fillets",
+      "retailer": "Tesco",
+      "name": "Tesco Room To Roam British Chicken Breast Fillets 650g",
+      "species": "Chicken",
+      "identityStatus": "exact_variant",
+      "decision": "confirmed_mismatch",
+      "claims": [
+        {"type": "indoor_system", "wording": "raised in more spacious barns"},
+        {"type": "welfare_scheme", "wording": "RSPCA Assured and Red Tractor Enhanced Welfare Assured"}
+      ],
+      "sourceIds": ["tesco-room-to-roam-product-page"],
+      "limitations": "The cited page documents a barn system. It does not establish organic status or outdoor access."
+    }
+  ]
+}
